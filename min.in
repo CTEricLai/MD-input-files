@@ -1,0 +1,17 @@
+minimization
+ &cntrl
+  imin=1,       ! Minimize the initial structure
+  maxcyc=1000,  ! Maximum number of cycles for minimization
+  ncyc=500,     ! Switch from steepest descent to conjugate gradient minimization after ncyc cycles
+  ntb=1,        ! Constant volume
+  ntp=0,        ! No pressure scaling
+  ntf=1,        ! Complete force evaluation
+  ntc=1,        ! No SHAKE
+  ntpr=500,     ! Print to mdout every ntpr steps
+  ntwr=500,     ! Write a restart file every ntwr steps
+  ntwx=500,     ! Write to a trajectory file every ntwx steps
+  cut=10.0,     ! Nonbonded cutoff in Angstroms
+  ioutfm=1,     ! Write a binary (netcdf) trajectory
+  ntxo=2,       ! Write binary restart files
+  ntr=1, restraint_wt=10, restraintmask=":1-200 & !@H=",
+ /
